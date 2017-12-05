@@ -15,3 +15,13 @@ class Daily_Specials(CMSPlugin):
 
     def __unicode__(self):
         return "%s"%(self.name,)
+
+class Menu_Item(CMSPlugin):
+    name=models.CharField(max_length=200)
+    image=models.ImageField(upload_to="menu_items")
+    price=models.CharField(max_length=200)
+    description=models.TextField()
+    url=models.CharField(max_length=200)
+
+    def __unicode__(self):
+        return "%"%(self.name)

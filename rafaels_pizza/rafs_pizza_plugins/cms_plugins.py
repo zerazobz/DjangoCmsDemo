@@ -17,5 +17,21 @@ class Daily_Specials_Plugin(CMSPluginBase):
 
         return context
 
+class Menu_Item_Plugin(CMSPluginBase):
+    model = Menu_Item
+    name = "Opcion Menu"
+    render_template = "menu_item.html"
+
+    def render(self, context, instance, placeholder):
+        context.update({
+            'name': instance.name,
+            'image': instance.image,
+            'price': instance.price,
+            'description': instance.description,
+            'url': instance.url
+        })
+
+
 plugin_pool.register_plugin(Daily_Specials_Plugin)
+plugin_pool.register_plugin(Menu_Item_Plugin)
 

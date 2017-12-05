@@ -209,3 +209,23 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+CMS_PLACEHOLDER_CONF = {
+    'daily_specials': {
+        'name': 'Daily Specials',
+        'plugins': [ "Daily_Specials_Plugin" ],
+        'plugin_labels': {
+            'Daily_Specials_Plugin': 'Add Daily Special'
+        },
+        'limits': {
+            'global': 1
+        }
+    },
+    'menu_ITEMS': {
+        'name': 'Item de Menu',
+        'plugins': [ "Menu_Item_Plugin" ],
+        "plugin_labels": {
+            "Menu_Item_Plugin": "Anhaidr un nuevo Item de Menu"
+        }
+    }
+}
