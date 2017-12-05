@@ -221,7 +221,7 @@ CMS_PLACEHOLDER_CONF = {
             'global': 1
         }
     },
-    'menu_ITEMS': {
+    'menu_items': {
         'name': 'Item de Menu',
         'plugins': [ "Menu_Item_Plugin" ],
         "plugin_labels": {

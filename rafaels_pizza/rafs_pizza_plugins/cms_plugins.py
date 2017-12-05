@@ -30,7 +30,7 @@ class Menu_Item_Plugin(CMSPluginBase):
             'description': instance.description,
             'url': instance.url
         })
-
+        return context
 
 plugin_pool.register_plugin(Daily_Specials_Plugin)
 plugin_pool.register_plugin(Menu_Item_Plugin)
