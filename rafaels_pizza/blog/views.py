@@ -14,7 +14,7 @@ def category(request, c_id):
     context["category"] = selectedCategory
 
     posts = Post.objects.filter(category = selectedCategory)
-    context["post"] = posts
+    context["posts"] = posts
 
     return render(request, "category.html", context)
 
