@@ -24,4 +24,4 @@ class Menu_Item(CMSPlugin):
     url=models.CharField(max_length=200)
 
     def __unicode__(self):
-        return "%"%(self.name)
+        return "%s" % (self.name,)
