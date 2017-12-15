@@ -212,20 +212,20 @@ THUMBNAIL_PROCESSORS = (
 
 CMS_PLACEHOLDER_CONF = {
     'daily_specials': {
-        'name': 'Daily Specials',
+        'name': 'Especiales del Dia',
         'plugins': [ "Daily_Specials_Plugin" ],
         'plugin_labels': {
-            'Daily_Specials_Plugin': 'Add Daily Special'
+            'Daily_Specials_Plugin': 'Añadir especial del día.'
         },
         'limits': {
             'global': 1
         }
     },
     'menu_items': {
-        'name': 'Item de Menu',
+        'name': 'Menu del Dia',
         'plugins': [ "Menu_Item_Plugin" ],
         "plugin_labels": {
-            "Menu_Item_Plugin": "Anhaidr un nuevo Item de Menu"
+            "Menu_Item_Plugin": "Añadir menu del día."
         }
     }
 }

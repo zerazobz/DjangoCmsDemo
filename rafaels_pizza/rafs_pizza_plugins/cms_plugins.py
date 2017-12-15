@@ -4,7 +4,7 @@ from .models import *
 
 class Daily_Specials_Plugin(CMSPluginBase):
     model = Daily_Specials
-    name = "Daily Specials"
+    name = "Especial"
     render_template = "daily_special.html"
 
     def render(self, context, instance, placeholder):
@@ -19,7 +19,7 @@ class Daily_Specials_Plugin(CMSPluginBase):
 
 class Menu_Item_Plugin(CMSPluginBase):
     model = Menu_Item
-    name = "Opcion Menu"
+    name = "Opción"
     render_template = "menu_item.html"
 
     def render(self, context, instance, placeholder):
